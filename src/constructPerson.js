@@ -1,12 +1,9 @@
 function constructPerson(fname, lname){
   const obj = {}
 
-  obj.fname = fname;
-  obj.lname = lname;
+  // save fname and lname on obj
 
-  obj.getGreeting = function(){
-    return `Hello ${this.fname} ${this.lname}`
-  }
+  // create a function named `getGreeting` that returns a greeting
 
   return obj;
 }

@@ -7,12 +7,17 @@ function constructCountdown(time){
   };
 
   obj.start = function(cb){
-    const self = this;
+
+
     this.intervalID = setInterval(function(){
-      if(self.secondsLeft <= 0){
-        clearInterval(self.intervalID)
+      // the `this` keyword here does not refer to `obj`
+      // update the code such that `secondsLeft`, and `intervalID`
+      // can be accessed.
+
+      if(this.secondsLeft <= 0){
+        clearInterval(this.intervalID)
       }
-      cb(self.secondsLeft--);
+      cb(this.secondsLeft--);
     },1000)
   }
 

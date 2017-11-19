@@ -4,7 +4,7 @@ const constructCountdown = require('../src/constructCountdown');
 
 describe('constructCountdown', function(){
   this.slow(10000) // teaks coloring to time in test reporter
-  this.timeout(0)  // disables
+  this.timeout(15000)  // tests should not take more that 15 seconds
   it('it should count down from the value that it was constructed with when `start()` method is invoked with a callback function`', function(done){
     let rounds = 5;
 
