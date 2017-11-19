@@ -22,12 +22,16 @@ describe('constructCountdown', function(){
       if(val === 0){
 
         // stop the test
-        done();
+        setTimeout(function(){
+          expect(c.secondsLeft).to.equal(-1)
+          done();
+        },2000)
       }
     });
   });
 
   it('should reset to it`s original countdown timer when `reset()` method is invoked', function(done){
+    // if this error triggers, add a clearInterval()
     let rounds = 5;
 
     // create the countdown clock
@@ -43,8 +47,10 @@ describe('constructCountdown', function(){
       // if the value is 0, it means that the clock is over
       if(val === 0){
 
-        // stop the test
-        done();
+        setTimeout(function(){
+          expect(c.secondsLeft).to.equal(-1)
+          done();
+        },2000)
       }
     });
 
