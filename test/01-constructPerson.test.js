@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const constructPerson = require('../src/constructPerson')
+const constructPerson = require('../src/01-constructPerson')
 
 describe('constructPerson', function(){
   it('should return an object', function(){

@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 const sinon  = require("sinon");
-const constructCountdown = require('../src/constructCountdown');
+const constructCountdown = require('../src/02-constructCountdown');
 
 describe('constructCountdown', function(){
   this.slow(10000) // teaks coloring to time in test reporter
