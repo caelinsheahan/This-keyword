@@ -9,7 +9,7 @@ function constructCountdown(time){
   obj.start = function(cb){
 
 
-    this.intervalID = setInterval(function(){
+    this.intervalID = setInterval(() => {
       // the `this` keyword here does not refer to `obj`
       // update the code such that `secondsLeft`, and `intervalID`
       // can be accessed.
